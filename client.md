@@ -23,11 +23,12 @@ tmall.com(no cookie)
 
 #### tieba.baidu.com和zhidao.baidu.com可以共享登录状态
 
-将二级域名下的cookie的domain全部设置为顶级域名
+所有域下document.cookie = ";path=/;domain=qq.com"
 
 #### 拓展
 
-1. token
-2. CSRF
-3. SSO单点登陆
+1. localstorage跨子域解决方案 ： 所有跨域传递信息页面设置document.domain=主域名 + iframe + postMessage()
+2. token
+3. CSRF
+4. SSO单点登陆
 
