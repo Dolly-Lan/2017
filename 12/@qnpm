@@ -1,0 +1,21 @@
+### httpmw
+
+1. .urls  请求地址
+    .set(opts)   配置多个地址opts为数组类型
+         opt: {
+          id: [必填] 唯一标识
+          url: [必填] URL，可以配合template定义url参数
+          method: [必填] Http方法，支持get,put,post,delete
+          expired: 缓存过期
+            s 秒数
+            m 分钟数
+            h 小时数
+            d 天数
+            M 月数
+            y 年数
+          schema: 格式校验配置
+            request: 请求
+            params: query string 校验schema的id
+          data [put] [post] data校验schema的id
+            response 响应数据校验schema的id
+        }
