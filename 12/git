@@ -1,3 +1,33 @@
-从本地库push代码到新的仓库
+### 从本地库push代码到新的仓库
+
 git remote add <自定义库名> git@xxxx.git  //在本地库添加远端库
 git push <自定义库名>   //push到远端
+
+### git常用命令
+
+git branch //查看分支
+git branch -r  //查看所有分支
+git pull //更新当前分支
+
+### webstorm git使用
+
+vcs > checkout from.. > git 检出代码库
+
+git branches > local branches 
+                              > checkout  // 切换分支
+                              > checkout as a new branch  // 克隆本地分支为一个新分支
+             > remote branches 
+                              > checkout as a new local branch  //克隆远端分支
+             
+version control > log > reset current branch to here > hard // 对未push的本地库回滚
+                > local changes  // 可见所有工作区的改动
+                
+git   
+    > show conflict
+    > repositery > 
+                 > merge changes //把本地其他分支有更新的合并到当前分支
+                 > stash //把工作区的改动清除并缓存
+                 > unstash > pop stash //把缓存提取出来并应用到工作区
+                
+
+
