@@ -1,0 +1,3 @@
+从本地库push代码到新的仓库
+git remote add <自定义库名> git@xxxx.git  //在本地库添加远端库
+git push <自定义库名>   //push到远端
