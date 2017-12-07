@@ -2,7 +2,7 @@
 
 git remote add <自定义库名> git@xxxx.git  //在本地库添加远端库
 git push <自定义库名>   //push到远端
-git pull <自定义库明>
+git pull <自定义库名>
 
 ### git常用命令
 
