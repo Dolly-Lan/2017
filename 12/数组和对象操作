@@ -1,0 +1,8 @@
+### Array
+
+1. slice(index, end): 分割
+2. join(): 拼接
+
+#### lodash篇
+
+1. take(array,N) / takeRight(array,N): 取数组第一个到N个 / 数组最后一个取N个
