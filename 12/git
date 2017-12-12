@@ -9,6 +9,7 @@ git pull <自定义库名>
 git branch //查看分支
 git branch -r  //查看所有分支
 git pull //更新当前分支
+git commit -m 'xxx' //提交并添加注释
 
 ### webstorm git使用
 
