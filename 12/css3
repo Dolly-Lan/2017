@@ -1,0 +1,10 @@
+
+### display:flex
+
+[Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+
+  .container{
+    display: flex;
+    justify-content: center | space-between;  //水平方向的位置排列
+    align-items： flex-start | flex-end | center; // 竖直方向的位置排列
+  }
