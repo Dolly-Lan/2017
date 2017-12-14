@@ -1,0 +1,3 @@
+### input的size和width区别
+ 
+ size表示输入宽度为多少字符，width是html5的属性，只能对type="image"设置
