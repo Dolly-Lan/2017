@@ -1,7 +1,9 @@
 
 ### display:flex
 
-[Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+1. [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+2. [Flex布局bug列表](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers)
+
 
   .container{
     display: flex;
