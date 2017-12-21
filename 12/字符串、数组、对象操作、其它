@@ -12,3 +12,9 @@
 #### lodash篇
 
 1. take(array,N) / takeRight(array,N): 取数组第一个到N个 / 数组最后一个取N个
+
+### 日期转换
+
+1. 时间戳和日期： 
+  时间戳->日期： new Date(timestamp)
+  日期->时间戳： date.valueof()
