@@ -1,13 +1,13 @@
 ### String
 
 1. split():转数组
-2. concat(): 字符串拼接
 
 ### Array
 
 1. slice(index, end): 分割
 2. join(): 转字符串
 3. slice(start,end): 数组分割
+4. concat(): 数组拼接
 
 3. sort(): sort((a, b) => a - b) 升序 sort((a, b) => b - a)降序
 
