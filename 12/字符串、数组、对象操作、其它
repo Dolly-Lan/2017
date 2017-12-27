@@ -8,8 +8,13 @@
 2. join(): 转字符串
 3. slice(start,end): 数组分割
 4. concat(): 数组拼接
+5. forEach(): 循环数组 **没有返回值** 
 
 3. sort(): sort((a, b) => a - b) 升序 sort((a, b) => b - a)降序
+
+### 对象
+
+1. map(): 遍历对象 **有返回值**
 
 #### lodash篇
 
