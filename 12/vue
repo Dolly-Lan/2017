@@ -1,6 +1,8 @@
+## 声明周期
+
 ### created 
 
-### mounted
+### mounted  $nextTick
 
 ### computed  声明可计算属性
 
