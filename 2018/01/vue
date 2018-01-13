@@ -1,4 +1,4 @@
 ### 生命周期
 
-1. created 不会去更新当前prop值 优先于mounted
-2. mounted
+1. created 不会去更新当前props值 优先于mounted
+2. mounted 也不会去更新当前props的值
