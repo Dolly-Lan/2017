@@ -1,6 +1,7 @@
 ### String
 
 1. split():转数组
+2. subStr(start, end): 提取字符串 
 
 ### Array
 
