@@ -2,7 +2,9 @@
 
 1. 日期转时间戳： +new Date()
 
-### 数组和对象转换
+### 数组
 
-1. 对象转数组： Object.keys(obj)
+1. 数组过滤：filter(callBack) 在callBack中定义过滤的条件(callBack中需有return)
+2. 对象转数组： Object.keys(obj)
+
 
