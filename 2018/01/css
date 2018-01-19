@@ -1,1 +1,3 @@
 中文字符换行 word-break: break-all 
+文字两端对齐 text-align: justfy
+关于隐藏滚动条：对overflow-x:hidden/scroll时 也需要对 overflow-y同步设置对应的效果 否则会引起同步修改
