@@ -1,0 +1,1 @@
+1. trim(string, condiction) 从字符串中移除前面和后面的空白 或 指定的字符
