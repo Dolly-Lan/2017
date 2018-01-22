@@ -5,6 +5,10 @@
 ### 数组
 
 1. 数组过滤：filter(callBack) 在callBack中定义过滤的条件(callBack中需有return)
-2. 对象转数组： Object.keys(obj)
+
+### 对象
+
+1. 对象转键名数组类型： Object.keys(obj)
+2. 对象转键值数组类型： Object.values(obj)
 
 
