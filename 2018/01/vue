@@ -2,3 +2,13 @@
 
 1. created 不会去更新当前props值 优先于mounted
 2. mounted 也不会去更新当前props的值
+
+### 指令
+
+1. v-html 在dom中嵌入渲染包含html代码的变量
+
+### 其它
+
+1. 在属性中插入vue变量
+
+  :style="'color:'+ color"
