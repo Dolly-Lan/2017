@@ -2,10 +2,17 @@
 
 1. created 不会去更新当前props值 优先于mounted
 2. mounted 也不会去更新当前props的值
+3. destroy
 
 ### 指令
 
 1. v-html 在dom中嵌入渲染包含html代码的变量
+
+### 修饰符
+
+1. .native  给vue组件绑定原生的事件
+
+      @click.native   
 
 ### 其它
 
