@@ -22,4 +22,4 @@
   
 2. vm.$parent 父实例
 
-  this.$parent.$ref
+  this.$parent.$refs
