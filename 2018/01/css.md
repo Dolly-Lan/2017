@@ -15,36 +15,36 @@ table表头固定表体滚动条
       
  * fixed ：表格的列宽会优先根据手动配置的列宽来生成，如果没有配置列宽，那么会根据表格宽度来自动分配
 
-    <table style="table-layout:fixed;width:100px">  <!--表头-->
-      <!--通过colgroup设置列宽-->
-      <colgroup>  
-        <col width="20"></col>
-        <col width="30"></col>
-        <col width="50"></col>
-      </colgroup>
-      <thead>
-        <th>
-          <td></td>
-          <td></td>
-          <td></td>
-        </th>
-      </thead>
-    </table>
-    <table style="max-height: 200px; style="table-layout:fixed;width:100px"> <!--表体-->
-      <!--通过colgroup设置列宽-->
-      <colgroup>
-        <col width="20"></col>
-        <col width="30"></col>
-        <col width="50"></col>
-      </colgroup>
-      <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+      <table style="table-layout:fixed;width:100px">  <!--表头-->
+        <!--通过colgroup设置列宽-->
+        <colgroup>  
+          <col width="20"></col>
+          <col width="30"></col>
+          <col width="50"></col>
+        </colgroup>
+        <thead>
+          <th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </th>
+        </thead>
+      </table>
+      <table style="max-height: 200px; style="table-layout:fixed;width:100px"> <!--表体-->
+        <!--通过colgroup设置列宽-->
+        <colgroup>
+          <col width="20"></col>
+          <col width="30"></col>
+          <col width="50"></col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
 
 calc()
  
