@@ -46,6 +46,18 @@ table表头固定表体滚动条
         </tbody>
       </table>
 
-calc()
+calc()属性值
+
+生成属性值是可计算，应用场景：
+
+1.  盒模型宽高设置，可充当box-sizing:border-box的作用：具有IE盒模型的属性
+
+    .box {
+      width: calc(100%-(1px+2px)*2)
+      border:1px;
+      padding:2px;
+    }
+
+
  
  
