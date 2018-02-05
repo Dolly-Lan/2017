@@ -18,8 +18,8 @@
 
 1. 在属性中插入vue变量
 
-  :style="'color:'+ color"
+            :style="'color:'+ color"
   
 2. vm.$parent 父实例
 
-  this.$parent.$refs
+            this.$parent.$refs
