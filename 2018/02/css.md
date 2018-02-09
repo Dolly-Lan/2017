@@ -2,7 +2,7 @@
 
 **关注width**
 
-![](https://images2015.cnblogs.com/blog/964016/201607/964016-20160726105909794-2006287331.jpg)
+![](http://images.cnitblog.com/blog/347002/201409/121710262933336.jpg)
 ![](https://images2015.cnblogs.com/blog/964016/201607/964016-20160726110215294-2099215633.jpg)
 
 ### 2. :nth-child(odd) 与 :nth-child(even)
