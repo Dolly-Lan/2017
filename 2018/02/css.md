@@ -13,4 +13,10 @@
 
     border-collapse: collapse;  /* table的属性，collapse值表示把tr和td的border-spacing忽略，同等宽度下会优先使用td的border */
     
-border-spacing这个table的属性是设置tr和td的border之间的间距值，如果为0那么2条border就会无缝拼接
+PS: border-spacing这个table的属性是设置tr和td的border之间的间距值，如果为0那么2条border就会无缝拼接
+
+### 4. 关于文字换行
+
+ 1. 连续英文强制换行： 
+ 
+        word-break:break-all;
