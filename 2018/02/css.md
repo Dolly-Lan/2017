@@ -17,6 +17,10 @@ PS: border-spacing这个table的属性是设置tr和td的border之间的间距�
 
 ### 4. 关于文字换行
 
- 1. 连续英文强制换行： 
+ 1. 强制换行： 
  
-        word-break:break-all;
+ 
+        word-break:break-all; /* 连续英文强制换行 ,另外一个属性值keep-all	只能在半角空格或连字符处换行 */
+        
+        
+        
