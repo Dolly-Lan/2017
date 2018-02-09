@@ -11,4 +11,6 @@
 
 ### 3. table 边框合并
 
-    border-collapse: collapse;  /*table的属性，collapse值表示把tr和td的边框合并为同一个*/
+    border-collapse: collapse;  /* table的属性，collapse值表示把tr和td的border-spacing忽略，同等宽度下会优先使用td的border */
+    
+border-spacing这个table的属性是设置tr和td的border之间的间距值，如果为0那么2条border就会无缝拼接
