@@ -15,6 +15,8 @@
   
   [详细文档](https://segmentfault.com/a/1190000010211622)
 
-  用处：生成随机数据，让数据更真实。
+  即Mock.Random方法， 在模板数据中被称为占位符，用于生成各种类型的随机数据，让数据更真实。
 
-    @string(length) / @string(pool?,min?,max?)
+    @string(length) / @string(pool?,min?,max?)   //  英文字符串
+    @ctitle( min?, max? )  // 返回中文标题
+    @integer(min?, max?)  //返回整数
