@@ -17,4 +17,4 @@
 
   用处：生成随机数据，让数据更真实。
 
-    @string()
+    @string(length) / @string(pool?,min?,max?)
