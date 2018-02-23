@@ -10,3 +10,11 @@
     // 生成规则 rule
     // 属性值   value
     'name|rule': value
+    
+  #### 数据占位符
+  
+  [详细文档](https://segmentfault.com/a/1190000010211622)
+
+  用处：生成随机数据，让数据更真实。
+
+    @string()
