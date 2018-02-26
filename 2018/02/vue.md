@@ -8,13 +8,13 @@
     
 ### render函数v-model
 
-render 函数中没有与 v-model 相应的 api - 你必须自己来实现相应的逻辑：
+render 函数中没有与 v-model 相应的 api - 你必须自己来实现相应的逻辑：通过赋值给input的value属性来设置
 
     render: function (createElement) {
       var self = this
       return createElement('input', {
         domProps: {
-          value: self.value
+          value: self.value  // 
         },
         on: {
           input: function (event) {
