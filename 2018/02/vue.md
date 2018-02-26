@@ -2,8 +2,8 @@
 
 1. Vue.component( id, [definition])：注册或获取全局组件
 
-    Vue.component(id, vue对象)  // 注册
-    var MyComponent = Vue.component('my-component')  // 获取
+        Vue.component(id, vue对象)  // 注册
+        var MyComponent = Vue.component('my-component')  // 获取
     
     
 ### render函数v-model
