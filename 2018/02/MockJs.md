@@ -21,3 +21,22 @@
       @ctitle( min?, max? )  // 返回中文标题
       @integer(min?, max?)  //返回整数
       @boolean( min?, max?, current?)  // 返回true 或者false
+
+  #### 插入变量
+  
+    Mock.mock({
+        'data': {
+          'total': 100,
+          [`list|${pageSize}`]: [{
+            'id': '@integer(0, 100)',
+            'title': '@ctitle(3, 5)',
+            'type': '@ctitle(3, 5)',
+            'days': '@integer(0, 100)',
+            'day_logs_doing': '@integer(0, 1000)',
+            'day_logs': 1000,
+            'month_logs_doing': '@integer(1000, 10000)',
+            'month_logs': 10000,
+            'status': '@integer(0, 1)'
+          }]
+        }
+      })
