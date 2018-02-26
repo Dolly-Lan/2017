@@ -25,3 +25,9 @@ render 函数中没有与 v-model 相应的 api - 你必须自己来实现相应
       })
     }
 
+### 生命周期
+
+[文档](https://segmentfault.com/a/1190000008010666)
+
+#### beforeDestroy
+
