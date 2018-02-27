@@ -1,3 +1,5 @@
+## MockJS
+
 ### 语法：
 
 [文档](https://github.com/nuysoft/Mock/wiki/Syntax-Specification#%E6%95%B0%E6%8D%AE%E6%A8%A1%E6%9D%BF%E5%AE%9A%E4%B9%89%E8%A7%84%E8%8C%83-dtd)
@@ -42,3 +44,43 @@
           }]
         }
       })
+      
+## easy Mock
+
+### 响应式数据
+
+  为某个属性指定一个 Function。在 Function 中，我们提供了 _req 对象，这使得我们可以通过请求对象编写逻辑，实现响应式数据，如图所示。
+
+    Mock.mock({
+      data: {
+        _req: function ({_req}) {
+          return req
+        }
+      }
+    })
+    
+    
+  解析为：
+    
+      {
+        "data": {
+          "_req": {
+            "method": "GET",
+            "url": "/mock/5a8f7c5f752aaa0d37b35cfd/scene/scene/state",
+            "header": {
+              "host": "mock",
+              "connection": "close",
+              "accept": "application/json, */*",
+              "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.109 Safari/537.36",
+              "content-type": "application/json",
+              "referer": "http://mock.bfe.360es.cn/mock/5a8f7c5f752aaa0d37b35cfd/scene/scene/state",
+              "accept-encoding": "gzip, deflate",
+              "accept-language": "zh-CN,zh;q=0.8",
+              "cookie": "easy-mock_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1YThmN2I5YjQ1YTQ4YzdmNjdiNjg2ZDEiLCJleHAiOjE1MjA1NjIzMzEsImlkIjoiNWE4ZjdiOWJlZWZkZGE3ZjZjYzUzMDAxIiwiaWF0IjoxNTE5MzUyNzMxfQ.Yjq6tgKIqoOJzuk3mMT1dd5vZYQbphSnJYX0q5Z4hiQ"
+            }
+          }
+        }
+      }
+    
+    通过_req对象可以拿到的参数说明[文档](http://mock.bfe.360es.cn/docs#xiang-ying-shi-shu-ju)
+    
