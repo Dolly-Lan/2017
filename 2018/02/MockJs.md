@@ -22,9 +22,11 @@
       @integer(min?, max?)  //返回整数
       @boolean( min?, max?, current?)  // 返回true 或者false
 
-  #### 插入变量
+  #### 生成规则插入变量
   
-    Mock.mock({
+  对list的数据模版必须使用类型符[ ]括起来，再在内部使用es模版语言插入，如果不用[]括起来就没用
+  
+    Mock.mock({
         'data': {
           'total': 100,
           [`list|${pageSize}`]: [{
