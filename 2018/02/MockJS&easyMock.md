@@ -28,7 +28,8 @@
   
   对list的数据模版必须使用类型符[ ]括起来，再在内部使用es模版语言插入，如果不用[]括起来就没用
   
-    Mock.mock({
+  
+    Mock.mock({
         'data': {
           'total': 100,
           [`list|${pageSize}`]: [{
