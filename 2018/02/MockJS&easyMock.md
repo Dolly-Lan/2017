@@ -30,22 +30,28 @@
   
   
     Mock.mock({
-        'data': {
-          'total': 100,
-          [`list|${pageSize}`]: [{
-            'id': '@integer(0, 100)',
-            'title': '@ctitle(3, 5)',
-            'type': '@ctitle(3, 5)',
-            'days': '@integer(0, 100)',
-            'day_logs_doing': '@integer(0, 1000)',
-            'day_logs': 1000,
-            'month_logs_doing': '@integer(1000, 10000)',
-            'month_logs': 10000,
-            'status': '@integer(0, 1)'
+        data: {
+          total: 100,
+          [`list|${pageSize}`]: [{   
+            id: '@integer(0, 100)',
+            title: '@ctitle(3, 5)',
+            type: '@ctitle(3, 5)',
+            days: '@integer(0, 100)',
+            day_logs_doing: '@integer(0, 1000)',
+            day_logs: 1000,
+            month_logs_doing: '@integer(1000, 10000)',
+            month_logs: 10000,
+            status: '@integer(0, 1)'
           }]
         }
       })
       
+  对于添加规则|的数据模版要使用引号，否则无法解析
+  
+    
+    list | 15
+    
+    
 ## easy Mock
 
 ### 响应式数据
