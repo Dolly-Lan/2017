@@ -20,6 +20,7 @@
 
             :style="'color:'+ color"
   
-2. vm.$parent 父实例
+2. vm.$parent 父实例 **只读**
 
             this.$parent.$refs
+            this.$parent.$data
