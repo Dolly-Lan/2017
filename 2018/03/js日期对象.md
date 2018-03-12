@@ -8,6 +8,5 @@
             
     设置当前日期为N天前
     
-    
             var d = new Date() 
-            d.setDate(d.getDate()-N)
+            d.setDate(d.getDate()-N)
