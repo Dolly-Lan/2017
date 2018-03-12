@@ -26,4 +26,4 @@
 
 1. 时间戳和日期： 
   时间戳->日期： new Date(timestamp)
-  日期->时间戳： date.valueof()
+  日期->时间戳： date.valueOf()
