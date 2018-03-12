@@ -10,3 +10,7 @@
     
             var d = new Date() 
             d.setDate(d.getDate()-N)
+
+### moment 日期处理类库
+
+[中文文档](http://momentjs.cn/)
