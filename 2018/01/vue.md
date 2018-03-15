@@ -20,7 +20,9 @@
 
             :style="'color:'+ color"
   
-2. vm.$parent 父实例 **只读**
+2. vm.$parent 父实例 **只读**  
+
+相当于引入子实例的上级实例的this对象
 
             this.$parent.$refs
             this.$parent.$data
