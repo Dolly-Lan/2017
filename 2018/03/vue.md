@@ -28,3 +28,5 @@ deep选项：
             this.obj.a = Math.random()
         }
     }
+
+### v-if 
