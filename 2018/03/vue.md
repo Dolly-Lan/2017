@@ -59,5 +59,23 @@ deep选项：
     
 ### $options **只读**
 
-获取Vue实例的初始化选项
+    > 获取Vue实例的初始化选项
+
+### 生命周期
+
+  1. created: 在实例创建完成后被立即调用,实例已完成以下的配置：数据观测 (data observer)，属性和方法的运算，watch/event 事件回调。然而，挂载阶段还没开始
+  
+  2. mounted: 子组件开始挂载在$el上。 注意 mounted 不会承诺所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染完毕，可以用 vm.$nextTick 替换掉 mounted：
+  
+    mounted: function () {
+      this.$nextTick(function () {
+        // Code that will run only after the
+        // entire view has been rendered
+      })
+    }
+    
+  3. beforeDestroy：实例销毁之前调用。
+  
+    应用场景举例: mounted周期中调用定时器，可以在beforeDestroy中清除
+
      
