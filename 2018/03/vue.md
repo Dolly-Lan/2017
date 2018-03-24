@@ -77,5 +77,9 @@ deep选项：
   3. beforeDestroy：实例销毁之前调用。
   
     应用场景举例: mounted周期中调用定时器，可以在beforeDestroy中清除
+    
+### $emit/$on
+
+
 
      
