@@ -80,6 +80,20 @@ deep选项：
     
 ### $emit/$on
 
+on和emit的事件必须是在一个公共的实例上，才能触发。
 
+> vm.$on( event, callback ) 监听当前实例上的自定义事件。事件可以由vm.$emit触发。回调函数会接收所有传入事件触发函数的额外参数。
+
+> vm.$emit( event, […args] ) 触发当前实例上的事件。附加参数都会传给监听器回调。
+
+### vue子组件向父组件通信
+
+[官方文档](https://cn.vuejs.org/v2/guide/migration.html#events-%E9%80%89%E9%A1%B9-%E7%A7%BB%E9%99%A4)
+
+1. event hub [参考](https://blog.csdn.net/baidu_31333625/article/details/74928608)
+
+2. @/v-on 监听子组件上 $emit 的变化
+
+    
 
      
