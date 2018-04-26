@@ -8,3 +8,7 @@
     store |-- state   ( menus )
           |-- action  ( store.dispatch('SET_HEADER_MENUS_ACTION',menus) )
           |-- mutation ( function SET_HEADER_MENUS_ACTION(state,menus){state.menuState.menus = menus} )
+
+
+### 升级vue2踩坑
+
