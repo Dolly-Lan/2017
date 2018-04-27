@@ -14,5 +14,10 @@
 
  1. ready() 替换成 mounted()
  
- 2. 
+ 2. v-el: elName 替换成 ref="elName"
 
+ 3. v-link指令 替换成 <router-link>组件 [官方文档](https://cn.vuejs.org/v2/guide/migration-vue-router.html#v-link-%E6%9B%BF%E6%8D%A2)
+ 
+ 4. router.go()限定用途 只用作“前进/后退” 如果用做“导向特殊页面”必须使用router.push() [官方文档](https://cn.vuejs.org/v2/guide/migration-vue-router.html#router-go-%E6%94%B9%E5%8F%98)
+ 
+ 5. 
