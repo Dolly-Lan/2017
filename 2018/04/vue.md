@@ -8,6 +8,10 @@
     store |-- state   ( menus )
           |-- action  ( store.dispatch('SET_HEADER_MENUS_ACTION',menus) )
           |-- mutation ( function SET_HEADER_MENUS_ACTION(state,menus){state.menuState.menus = menus} )
+          
+  vuex 1.0 [代码示例](https://github.com/vuejs/vuex/tree/master/examples/counter-hot)
+  
+  vuex 2.0 [代码示例](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
 
 
 ### 升级vue2踩坑
