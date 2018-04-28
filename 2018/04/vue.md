@@ -24,7 +24,7 @@
  
     [官方文档](https://cn.vuejs.org/v2/guide/migration.html#FAQ) 
     
-    > 对于 Vuex ，版本 0.8+ 与 Vue 2 保持兼容，所以部分不必强制升级。
+> 对于 Vuex ，版本 0.8+ 与 Vue 2 保持兼容，所以部分不必强制升级。
     
  5. vue Router 
  
