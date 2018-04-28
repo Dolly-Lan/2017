@@ -31,3 +31,5 @@
  5. vue Router  [官方文档](https://cn.vuejs.org/v2/guide/migration.html#FAQ)
     
 > Vue Router 2 与 Vue 2 保持兼容，所以 Vue Router 是需要升级的，你必须遵循 [Vue Router 迁移方式](https://cn.vuejs.org/v2/guide/migration-vue-router.html)来处理
+
+ 6. {{{param}}}替换成 v-html="param"
