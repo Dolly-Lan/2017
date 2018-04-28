@@ -20,4 +20,14 @@
  
  4. router.go()限定用途 只用作“前进/后退” 如果用做“导向特殊页面”必须使用router.push() [官方文档](https://cn.vuejs.org/v2/guide/migration-vue-router.html#router-go-%E6%94%B9%E5%8F%98)
  
- 5. 
+ 5. vuex 0.6+ 需升级到 vuex 0.8+ 
+ 
+    [官方文档](https://cn.vuejs.org/v2/guide/migration.html#FAQ) 
+    
+    > 对于 Vuex ，版本 0.8+ 与 Vue 2 保持兼容，所以部分不必强制升级。
+    
+ 5. vue Router 
+ 
+    [官方文档](https://cn.vuejs.org/v2/guide/migration.html#FAQ)
+    
+    >  Vue Router 2 与 Vue 2 保持兼容，所以 Vue Router 是需要升级的，你必须遵循 [Vue Router 迁移方式](https://cn.vuejs.org/v2/guide/migration-vue-router.html)来处理
