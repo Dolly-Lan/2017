@@ -25,6 +25,10 @@
 
     [资料](https://www.licoy.cn/2964.html)
     
+6. 控制台报错use a data or computed property based on the prop's value
+
+    [资料](https://stackoverflow.com/questions/43959824/instead-use-a-data-or-computed-property-based-on-the-props-value-vue-js)
+
 ### vuex
 
 1. [vue1.x源码示例](https://github.com/vuejs/vuex/tree/master/examples/counter-hot)
