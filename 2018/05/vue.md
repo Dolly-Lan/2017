@@ -27,9 +27,9 @@
     
 ### vuex
 
-1. [vue1.x源码示例](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
+1. [vue1.x源码示例](https://github.com/vuejs/vuex/tree/master/examples/counter-hot)
 
-2. [vue2.x源码示例子](https://github.com/vuejs/vuex/tree/master/examples/counter-hot)
+2. [vue2.x源码示例子]( https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
 
 3. state和getters
 
