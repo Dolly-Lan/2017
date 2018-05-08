@@ -31,4 +31,30 @@
 
 2. [vue2.x源码示例子](https://github.com/vuejs/vuex/tree/master/examples/counter-hot)
 
+3. state和getters
+
+    state: 在计算属性中返回某个状态
+    
+        computed: {
+          count: function () {
+            return store.state.count
+          }
+        }
+    
+    getters: 该 getter 函数将会把仓库的 `store.state.count` 绑定为组件的 `this.count`
+    
+        export default {
+          template: '...',
+          data () { ... },
+          // 此处为我们从 store 实例中取回状态的位置
+          vuex: {
+            getters: {
+              // 该 getter 函数将会把仓库的 `store.state.count` 绑定为组件的 `this.count`
+              count: function (state) {
+                return state.count
+              }
+            }
+          }
+        }
+
     
