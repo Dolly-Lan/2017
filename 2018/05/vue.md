@@ -29,6 +29,8 @@
 
     [资料](https://stackoverflow.com/questions/43959824/instead-use-a-data-or-computed-property-based-on-the-props-value-vue-js)
 
+7. mounted只执行一次，当mounted中的数据需要依赖接口返回，mounted执行完之前接口未返回是无法获取的
+
 ### vuex
 
 1. [vue1.x源码示例](https://github.com/vuejs/vuex/tree/master/examples/counter-hot)
