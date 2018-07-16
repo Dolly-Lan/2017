@@ -1,5 +1,7 @@
  ### resolve (解析) 的 alias（别名）
  
+ [资料](https://www.cnblogs.com/afrog/p/6247665.html)
+ 
     resolve: {
       alias: {
         'vue': 'vue/dist/vue.common.js'   // 独立构建（包含模版编译器）
