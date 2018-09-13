@@ -11,3 +11,7 @@
         name2: ''
       }
     })
+
+### $set(target, key, value)
+
+  更新Array类型的key值时也需要使用此方法，否则无法watch变化
