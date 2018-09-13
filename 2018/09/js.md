@@ -20,3 +20,10 @@
         return item.value === 1
       })
        
+### 删除数组最后一位（影响原数组）
+
+    Array.pop()
+    
+### new Date().getTime()方法
+
+    获取到毫秒单位的时间戳
