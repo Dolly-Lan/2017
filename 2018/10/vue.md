@@ -9,3 +9,8 @@
   比如要使用nextTick()API，则使用如下方法
     
       this.$nextTick()
+      
+### computed mounted watch 顺序
+ 
+ computed > mounted > watch
+ 
