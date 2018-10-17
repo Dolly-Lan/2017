@@ -14,3 +14,15 @@
  
  computed > mounted > watch
  
+### 使用vue-router会在地址栏自动添加/#/号： http://localhost:8081/#/
+
+    let router = new VueRouter({
+      mode: 'history',
+      scrollBehavior: function (to, from, savedPosition) {
+        return savedPosition || { x: 0, y: 0 }
+      },
+      routes: []
+    )]
+
+  
+ 
