@@ -58,7 +58,7 @@ each block helper：遍历列表块内容，this表示当前遍历的对象，�
 #### {{#if value}}{{else}}{{/if}}
 
 if else block helper：value变量的值为true，则编译{{#if value}}后面的模版，如果value变量的值为false，则编译{{else}}后面的模版。
-**由于handlebar属于无逻辑模版，所以value只能是变量值，而不能使用运算符、表达式（===、<=、>=、+）比较得出true/false**，如果需要支持逻辑判断，请使用[快级helper](#块级helper)
+**由于handlebar属于无逻辑模版，所以value只能是变量值，而不能使用运算符、表达式（===、<=、>=、+）比较得出true/false**，如果需要支持逻辑判断，请使用[块级helper](#块级helper)
 
 ### registerHelper
 
