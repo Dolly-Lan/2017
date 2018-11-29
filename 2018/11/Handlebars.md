@@ -12,9 +12,10 @@
 示例：
 
     <h1>{{title}}</h1>  {{! 如果没找到匹配项，则没有输出。}}
-    <p>{{content.title}}</p>  {{! 支持点操作符}}
+    <p>{{content.title}}</p>  {{! 支持点操作符 }}
+    <p>{{array.length}}</p>  {{! 支持数组长度语法读取长度值 }}
 
-#### {{#Array}}{{/Array}}
+#### {{#array}}{{/array}}
 
 Block表达式：自动展开数组，并将Blocks的上下文设为数组中的元素
 
@@ -34,4 +35,27 @@ Block表达式：自动展开数组，并将Blocks的上下文设为数组中的
       <li>CSS</li>
     </ul>
     
+#### {{#each array}}{{/each}}
+
+each block helper：遍历列表块内容，this表示当前遍历的对象，同block表达式的用法很像，但是比block表达式多了this对象直接读取
+
+模版代码示例：
+
+    <ul>  
+      {{#each name}} {{! {name: ["html","css","javascript"]} }}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>  
+    
+编译结果示例：
+ 
+    <ul>  
+      <li>html</li>
+      <li>css</li>
+      <li>javascript</li>
+    </ul>
+    
+#### {{#if value}}{{else}}{{/if}}
+
+if else block helper：value变量的值为true，则编译{{#if value}}后面的模版，如果value变量的值为false，则编译{{else}}后面的模版，由于
 
