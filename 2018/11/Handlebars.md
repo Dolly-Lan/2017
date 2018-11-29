@@ -62,3 +62,22 @@ if else block helper：value变量的值为true，则编译{{#if value}}后面�
 
 ### registerHelper
 
+自定义helper：Handlebars.registerHelper()方法来注册一个helper
+
+#### 简单helper
+
+connectArray helper注册示例： 用于把数组连接为字符串
+
+    // registerHelper()的参数一：注册的helper名称;参数二： 是helper的函数
+    Handlebars.registerHelper('connectArray', function(array, opts) { // 参数一：模版中helper处理的值，参数二：opts在简单helper中未使用
+      return array.join(',')  // return的内容就是模板中输出的结果
+    })
+    
+在模版中使用该helper示例代码：
+
+    {{connectArray array}}
+    
+#### 块级helper
+
+
+    
