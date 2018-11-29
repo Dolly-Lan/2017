@@ -58,7 +58,7 @@ each block helper：遍历列表块内容，this表示当前遍历的对象，�
 #### {{#if value}}{{else}}{{/if}}
 
 if else block helper：value变量的值为true，则编译{{#if value}}后面的模版，如果value变量的值为false，则编译{{else}}后面的模版。
-**由于handlebar属于无逻辑模版，所以value只能是变量值，而不能使用运算符（===、<=、>=）比较得出true/false**，如果需要支持逻辑判断，请使用[registerhelper](#registerhelper)
+**由于handlebar属于无逻辑模版，所以value只能是变量值，而不能使用运算符、表达式（===、<=、>=、+）比较得出true/false**，如果需要支持逻辑判断，请使用[快级helper](#块级helper)
 
 ### registerHelper
 
@@ -69,7 +69,7 @@ if else block helper：value变量的值为true，则编译{{#if value}}后面�
 connectArray helper注册示例： 用于把数组连接为字符串
 
     // registerHelper()的参数一：注册的helper名称;参数二： 是helper的函数
-    Handlebars.registerHelper('connectArray', function(array, opts) { // 参数一：模版中helper处理的值，参数二：opts在简单helper中未使用
+    Handlebars.registerHelper('connectArray', function(array, opts) { // 参数一（可以传入多个参数）：模版中helper处理的值，最后一个参数：opts在简单helper中未使用
       return array.join(',')  // return的内容就是模板中输出的结果
     })
     
