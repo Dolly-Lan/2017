@@ -12,7 +12,7 @@
         "lint": "eslint --ext .js,.vue src"
       },
       "dependencies": {
-        "vue": "2.4.2"   // * vue库
+        "vue": "2.4.2"   // * vue库 同vue-template-compiler版本一致，否则运行vue-template-compiler会报错
       },
       "devDependencies": {
         "@360es/fi": "^10.1.4",  // * fi 库
@@ -22,4 +22,5 @@
     
 ### fi.config.js
 
+使用自动化脚手架，类似vue-cli
 
