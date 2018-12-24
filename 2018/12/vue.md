@@ -25,3 +25,9 @@
 [官方文档](https://cn.vuejs.org/v2/guide/render-function.html#createElement-参数)
 
 createElement(tag, data, node) 函数返回VNode（虚拟节点），并非返回真实DOM
+
+### style的scope属性
+
+[使用问题](https://segmentfault.com/a/1190000012184604#articleHeader10)
+
+[解决办法：深度作用选择器](https://vue-loader.vuejs.org/zh/guide/scoped-css.html#深度作用选择器)
