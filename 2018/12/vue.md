@@ -13,6 +13,13 @@
 自动过滤用户输入的首尾空白字符
 
     <input v-model.trim="msg">
+    
+#### .prevent
+
+阻止默认事件，常阻止form元素的默认submit事件
+
+    <!-- 提交事件不再重载页面 -->
+    <form v-on:submit.prevent="onSubmit"></form>
 
 ### render(createElement)
 
