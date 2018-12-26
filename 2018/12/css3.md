@@ -9,3 +9,6 @@
     background-color: var(--theme-color);
   }
 
+### :nth(a*n + b)
+
+n从0开始计算
