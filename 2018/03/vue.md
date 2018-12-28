@@ -96,6 +96,20 @@ on和emit的事件必须是在一个公共的实例上，才能触发。
 
 3. .sync
 
+    // 父组件
+    <div style=><child v-bind::width.sync="value"></child></div>
+    
+    // 子组件
+    <button @click='change'>修改宽度</button>
+    props: {
+      width: Number
+    },
+    methods: {
+      change () {
+        this.$emit('update:width': 100)
+      }
+    }
+    
     
 
      
