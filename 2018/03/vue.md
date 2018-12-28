@@ -92,23 +92,39 @@ on和emit的事件必须是在一个公共的实例上，才能触发。
 
 1. event hub [参考](https://blog.csdn.net/baidu_31333625/article/details/74928608)
 
-2. @/v-on 监听子组件上 $emit 的变化
+2. @/v-on 监听子组件上 $emit抛出的事件
+
+        // 父组件
+        <div><child @getValue="sendValue"></child></div>
+
+        // 子组件
+        <button @click='change'>修改宽度</button>
+        props: {
+          width: Number
+        },
+        methods: {
+          change () {
+            this.$emit('sendValue',100)
+          }
+        }
 
 3. .sync
-
-    // 父组件
-    <div style=><child v-bind::width.sync="value"></child></div>
     
-    // 子组件
-    <button @click='change'>修改宽度</button>
-    props: {
-      width: Number
-    },
-    methods: {
-      change () {
-        this.$emit('update:width': 100)
-      }
-    }
+    是2点的语法糖
+    
+        // 父组件
+        <div><child v-bind:width.sync="value"></child></div>
+
+        // 子组件
+        <button @click='change'>修改宽度</button>
+        props: {
+          width: Number
+        },
+        methods: {
+          change () {
+            this.$emit('update:width': 100)
+          }
+        }
     
     
 
