@@ -95,17 +95,20 @@ on和emit的事件必须是在一个公共的实例上，才能触发。
 2. @/v-on 监听子组件上 $emit抛出的事件
 
         // 父组件
-        <div><child @getValue="sendValue"></child></div>
-
-        // 子组件
-        <button @click='change'>修改宽度</button>
-        props: {
-          width: Number
+        <div><child @sendValue="getValue"></child></div>
+        data () {
+            msg: ''
         },
         methods: {
-          change () {
-            this.$emit('sendValue',100)
-          }
+            getValue(msg) {
+                this.msg = msg
+            }
+        }
+
+        // 子组件
+        <button >子组件</button>
+        mounted () {
+          this.$emit('sendValue', '来自子组件的消息')
         }
 
 3. .sync
@@ -113,12 +116,12 @@ on和emit的事件必须是在一个公共的实例上，才能触发。
     是2点的语法糖
     
         // 父组件
-        <div><child v-bind:width.sync="value"></child></div>
+        <div><child :width.sync="value"></child></div>
 
         // 子组件
-        <button @click='change'>修改宽度</button>
+        <button @click='change'>子组件</button>
         props: {
-          width: Number
+          value: Number
         },
         methods: {
           change () {
