@@ -38,3 +38,9 @@ createElement(tag, data, node) 函数返回VNode（虚拟节点），并非返�
 [使用问题](https://segmentfault.com/a/1190000012184604#articleHeader10)
 
 [解决办法：深度作用选择器](https://vue-loader.vuejs.org/zh/guide/scoped-css.html#深度作用选择器)
+
+### vue router 
+
+[网络资料](https://segmentfault.com/a/1190000015619977#articleHeader3)
+
+路由导入某个文件时要在文件头部引入具体的某个文件,不能用 resolve => require(['xx.vue'], resolve) 或者 () => import('xx.vue') 这种方式， 这两种方式在axios中引入router时出现循环引用的错误！ throw new Error('Cyclic dependency' + nodeRep)
