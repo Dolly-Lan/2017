@@ -33,6 +33,15 @@
 
 createElement(tag, data, node) 函数返回VNode（虚拟节点），并非返回真实DOM
 
+其中data参数不仅仅可以通过on来监听时间，还可以使用nativeOn监听原生事件
+
+    // 仅用于组件，用于监听原生事件，而不是组件内部使用
+    // `vm.$emit` 触发的事件。
+    nativeOn: {
+      mouseenter: this.fun1,
+      mouseleave: this.fun2
+    }
+
 ### style的scope属性
 
 [使用问题](https://segmentfault.com/a/1190000012184604#articleHeader10)
