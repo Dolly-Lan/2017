@@ -33,7 +33,7 @@
 
 createElement(tag, data, node) 函数返回VNode（虚拟节点），并非返回真实DOM
 
-其中data参数不仅仅可以通过on来监听时间，还可以使用nativeOn监听原生事件
+其中data参数的属性中，不仅仅可以通过on来监听时间，还可以使用nativeOn监听原生事件
 
     // 仅用于组件，用于监听原生事件，而不是组件内部使用
     // `vm.$emit` 触发的事件。
