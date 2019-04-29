@@ -11,4 +11,9 @@
           <div>{{$refs.child.name}}</div>
         </div>
       
+### $route.push() 中query 和 params参数的区别
+
+相同：都可以用于通过url传递参数
+
+不同： query相当与get请求，post相当于post请求：因此通过query传递的参数会添加在url上，通过params则不会
 
