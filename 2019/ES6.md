@@ -1,5 +1,7 @@
 ### Promise
 
+[参考资料](https://segmentfault.com/a/1190000018769508)
+
 promise：是一个构造行数，通过以下方法调用：
 
     const promise = new promise()
