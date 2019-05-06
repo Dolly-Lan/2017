@@ -31,6 +31,15 @@ Promise构造函数的参数为函数：且该函数的参数仍为2个函数 re
       console.log(err)
     })
     
+catch方法——接收1个参数为函数。
+
+    .catch(err => {})
+
+捕获2种情况下的异常：
+
+1. reject状态：参数===当前Promise实例的reject(err)
+2. then方法内部异常
+    
 Promise 链式调用
 
 
