@@ -41,6 +41,7 @@ catch方法——接收1个参数为函数。
 
 1. reject状态：参数===当前Promise实例的reject(err)
 2. then方法内部异常
+
     
 Promise 链式调用
 
@@ -51,6 +52,6 @@ Promise 链式调用
 
 [资料](https://segmentfault.com/a/1190000016707991)
 
-### asyn 函数
+### async 函数
 
-[参考文档](http://es6.ruanyifeng.com/#docs/asyn)
+[参考文档](http://es6.ruanyifeng.com/#docs/async)
