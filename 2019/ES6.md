@@ -41,7 +41,6 @@ catch方法——接收1个参数为函数。
 
 1. reject状态：参数===当前Promise实例的reject(err)
 2. then方法内部异常
-
     
 Promise 链式调用
 
@@ -55,3 +54,20 @@ Promise 链式调用
 ### async 函数
 
 [参考文档](http://es6.ruanyifeng.com/#docs/async)
+
+async表示函数里有异步操作，返回Promise对象
+
+    asyncData () {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve('success')
+          }, 3000)
+        })
+    },
+    let data = ''
+    async function getData () {
+        data = await asyncData()
+        console.log(data)
+    }
+
+await表示中断函数，直到await后面的异步操作resolve
