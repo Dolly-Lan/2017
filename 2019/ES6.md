@@ -17,21 +17,21 @@ Promise构造函数的参数为函数：且该函数的参数仍为2个函数 re
 * 参数一 === 当前Promise实例的resolve(res)
 * 参数二 === 当前Promise实例的reject(err)
 
-    const promise = new Promise((resolve, reject) => {
-      setTimeout(() => {  // setTimeout用于模拟异步请求啦
-        const num = Math.random()
-        if (num > 0.5) {
-          resolve('success')
-        } else () {
-          reject('error')
-        }
-      }, 1000);
-    })
-    promise.then(res => {
-      console.log(res)
-    }, err => {
-      console.log(err)
-    })
+        const promise = new Promise((resolve, reject) => {
+          setTimeout(() => {  // setTimeout用于模拟异步请求啦
+            const num = Math.random()
+            if (num > 0.5) {
+              resolve('success')
+            } else () {
+              reject('error')
+            }
+          }, 1000);
+        })
+        promise.then(res => {
+          console.log(res)
+        }, err => {
+          console.log(err)
+        })
     
 catch方法——接收1个参数为函数。
 
