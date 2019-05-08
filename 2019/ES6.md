@@ -59,6 +59,16 @@ Promise 链式调用
 
 async表示函数里有异步操作，返回Promise对象
 
+    async function getData () {
+        return await asyncData()  // 假设asyncData为异步函数
+    }
+    getData().then().catch()
+
+await中断函数
+
+1. 表示中断函数，如果是Promise对象，则直到await后面的异步操作resolve，才会返回新的Promise对象，然后继续执行后面的代码
+2. 如果await后面的异步操作reject，则中断整个函数的执行
+
     asyncData () {
         return new Promise((resolve, reject) => {
           setTimeout(() => {
@@ -71,8 +81,61 @@ async表示函数里有异步操作，返回Promise对象
         data = await asyncData()
         console.log(data)
     }
+    
+异常处理：
 
-await
+await:
 
-1. 表示中断函数，如果是Promise对象，则直到await后面的异步操作resolve，才会返回新的Promise对象，
-2. 然后继续执行后面的代码
+1. try...catch...处理await
+
+        asyncData () {
+            return new Promise((resolve, reject) => {
+              setTimeout(() => {
+                reject('err')
+              }, 3000)
+            })
+        },
+        let data = ''
+        async function getData () {
+            try {
+                data = await asyncData()
+            } catch(err) => {
+                console.log(err)
+            }
+        }
+        getData()  // 'err'
+        
+2. wait后面使用catch函数捕获异常
+    
+        asyncData () {
+            return new Promise((resolve, reject) => {
+              setTimeout(() => {
+                reject('err')
+              }, 3000)
+            })
+        },
+        let data = ''
+        async function getData () {
+            data = await asyncData().catch(err => { console.log(err) })
+        }
+        getData()  // 'err'
+
+async:
+
+    async function getData () {
+        return await asyncData()  // 假设asyncData为异步函数
+    }
+    getData().then(res => {
+        // 假设asyncData resolve，则return asyncData的Promise对象
+    }).catch(err => {
+        // 假设asyncData reject，则return asyncData的Promise对象
+    })
+    
+注意：当async无论有没有return，一旦await后的Promise被reject，则直接
+
+    async function getData () {
+        await asyncData()  // 假设asyncData为异步函数
+    }
+    getData().catch(err => {
+        
+    })
