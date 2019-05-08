@@ -131,7 +131,7 @@ async:
         // 假设asyncData reject，则return asyncData的Promise对象
     })
     
-注意：当async无论有没有return，一旦await后的Promise被reject，则直接
+注意：当async无论有没有return，一旦await后的Promise被reject，async的catch会捕获到reject
 
     async function getData () {
         await asyncData()  // 假设asyncData为异步函数
@@ -139,3 +139,5 @@ async:
     getData().catch(err => {
         
     })
+    
+补充： 当一个async中有多个并发请求时：
