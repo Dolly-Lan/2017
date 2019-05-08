@@ -55,6 +55,8 @@ Promise 链式调用
 
 [参考文档](http://es6.ruanyifeng.com/#docs/async)
 
+> 进一步说，async函数完全可以看作多个异步操作，包装成的一个 Promise 对象，而await命令就是内部then命令的语法糖。
+
 async表示函数里有异步操作，返回Promise对象
 
     asyncData () {
@@ -70,4 +72,7 @@ async表示函数里有异步操作，返回Promise对象
         console.log(data)
     }
 
-await表示中断函数，直到await后面的异步操作resolve
+await
+
+1. 表示中断函数，如果是Promise对象，则直到await后面的异步操作resolve，才会返回新的Promise对象，
+2. 然后继续执行后面的代码
