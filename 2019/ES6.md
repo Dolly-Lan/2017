@@ -141,3 +141,7 @@ async:
     })
     
 补充： 当一个async中有多个并发请求时：
+
+### String.includes(string)
+
+判断字符串中是否包含目标字符串，返回true/false
