@@ -25,3 +25,7 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
         }
       }
     }
+
+### vue开发规范
+
+[官方资料](https://cn.vuejs.org/v2/style-guide/)
