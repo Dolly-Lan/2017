@@ -29,3 +29,11 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
 ### vue开发规范
 
 [官方资料](https://cn.vuejs.org/v2/style-guide/)
+
+### data
+
+必须要用函数声明data，由于data return {} 一个对象，为引用类型，则这个组件的所有实例之间共享这个data，因此必须使用data()来生成一个新的对象。
+
+    data() {
+        return {}
+    }
