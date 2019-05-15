@@ -1,6 +1,6 @@
 ### BEM命名规范
 
-概念：
+[官网](http://getbem.com/introduction/)
 
 B = Block = 块：UI框架中可以重复使用的组件。如 ：Tabs、Form、Menu
 
