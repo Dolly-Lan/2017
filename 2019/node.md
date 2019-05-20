@@ -19,3 +19,6 @@
 
 [参考资料](https://www.cnblogs.com/zytt/p/9038598.html)
 
+### window下的node升级
+
+由于window下无stable命令，则需要从官网上下载安装包进行重新安装
