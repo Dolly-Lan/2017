@@ -53,3 +53,11 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
 #### step2:
 
     vue create vue-test
+    
+#### step3:
+
+一路回车
+
+#### step4:
+
+    yarn serve
