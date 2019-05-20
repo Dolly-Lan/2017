@@ -44,7 +44,11 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
 
 #### step1:
 
-    npm i @vue/cli -g
+    yarn add global @vue/cli  //npm i @vue/cli -g
+    
+升级vue-cli可能会遇到问题，请参考资料：[资料](https://blog.csdn.net/inthat/article/details/90268110)
+    
+>vue cli 的包名称由 vue-cli 改成了 @vue/cli。 如果你已经全局安装了旧版本的 vue-cli (1.x 或 2.x)，你需要先通过 npm uninstall vue-cli -g 或 yarn global remove vue-cli 卸载它。然后安装新的
 
 #### step2:
 
