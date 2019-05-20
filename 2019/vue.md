@@ -37,3 +37,15 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
     data() {
         return {}
     }
+
+### Vue-cli 3.0
+
+[文档](https://cli.vuejs.org/zh/guide/prototyping.html)
+
+#### step1:
+
+    npm i @vue/cli -g
+
+#### step2:
+
+    vue create vue-test
