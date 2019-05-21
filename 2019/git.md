@@ -1,4 +1,4 @@
-### git提交规范
+### git commit规范
 
 [资料](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits)
 
