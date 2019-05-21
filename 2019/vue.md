@@ -38,7 +38,7 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
         return {}
     }
 
-### Vue-cli 3.0
+### Vue-cli 3.0 构建项目
 
 [文档](https://cli.vuejs.org/zh/guide/prototyping.html)
 
@@ -61,3 +61,9 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
 #### step4:
 
     yarn serve
+    
+### vue-cli 3.0  package.json
+
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
