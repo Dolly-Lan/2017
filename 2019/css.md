@@ -2,7 +2,7 @@
 
 [官网](http://getbem.com/introduction/)
 
-B = Block = 块：UI框架中可以重复使用的组件。如 ：Tabs、Form、Menu
+B = Block = 块：UI框架中可以重复使用的组件，具有唯一性的命名，相当于声明了一个独立的命名空间。如 ：Tabs、Form、Menu
 
 E = Element = 元素：Block的子元素且和Block语义相关。如：Menu item、List item
 
