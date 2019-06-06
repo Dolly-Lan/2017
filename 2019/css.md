@@ -15,3 +15,9 @@ BEM规范就是以如下方式来指定样式名称：
 “--”双连字符用于修饰“块”或“元素”
 
 备注： “-”单连字符可以用于连接B、E、M中不同的单词，如：menu-header__item--active
+
+
+### 连续英文、标点符号自动换行
+
+      word-break: normal;
+      word-wrap:break-word;
