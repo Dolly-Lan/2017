@@ -1,3 +1,5 @@
+[官方文档](https://yarn.bootcss.com/docs/cli/)
+
 ### add
 
 命令会更新package.json和yarn.lock文件
