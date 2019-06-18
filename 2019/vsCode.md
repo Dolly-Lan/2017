@@ -22,10 +22,20 @@
 
 ### 开发vue项目
 
-#### 支持.vue扩展文件
+#### Vetur: 支持.vue扩展文件
 
 1. 安装Vetur扩展： Ctrl + Shift + X （快捷搜索插件）
 2. 输入vetur后点击安装
+
+### Eslint & Prettier - Code formatter: 按照Eslint规则formater代码
+
+>Eslint校验代码语法
+
+>prettier - Code formatter统一格式化代码
+
+1. 安装Eslint、Prettier 插件
+2. 使用Alt + Shift + F 来格式化代码
+
 
 ### 提交前比对代码
 
