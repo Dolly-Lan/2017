@@ -29,5 +29,4 @@
 
 ### 提交前比对代码
 
-1. Ctrl + Shift + P 
-2. 输入命令： git: open changes
+侧边栏源代码管理器可查看
