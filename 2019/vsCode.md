@@ -27,3 +27,7 @@
 1. 安装Vetur扩展： Ctrl + Shift + X （快捷搜索插件）
 2. 输入vetur后点击安装
 
+### 提交前比对代码
+
+1. Ctrl + Shift + P 
+2. 输入命令： git: open changes
