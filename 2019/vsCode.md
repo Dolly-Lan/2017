@@ -27,7 +27,7 @@
 1. 安装Vetur扩展： Ctrl + Shift + X （快捷搜索插件）
 2. 输入vetur后点击安装
 
-### Eslint & Prettier - Code formatter: 按照Eslint规则formater代码
+#### Eslint & Prettier - Code formatter: 按照Eslint规则formater代码
 
 >Eslint校验代码语法
 
