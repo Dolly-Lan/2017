@@ -19,4 +19,4 @@
     
 删除远程分支：
 
-    git push origin –delete 分支名 
+    git push origin –-delete 分支名 
