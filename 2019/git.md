@@ -20,3 +20,13 @@
 删除远程分支：
 
     git push origin –-delete 分支名 
+
+or 
+
+    git push origin –d 分支名 
+    
+git 提交大小写不敏感
+
+.git > config配置
+
+  ignorecase = false // 默认为true，表示大小写不敏感
