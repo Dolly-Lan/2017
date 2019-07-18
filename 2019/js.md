@@ -25,3 +25,15 @@
     String.split(reg) 	// 把字符串按照正则表达式匹配规则分割为字符串数组
     
     
+### window.open()
+
+[MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/open)
+
+参数： open(url, windowName, options)
+返回值： open成功后新窗口的window对象，如果调用失败，返回值会是 null 。**如果父子窗口满足“同源策略”，你可以通过这个引用访问新窗口的属性或方法**。
+
+### onload
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
+
+当一个资源及其依赖资源（支持该事件的标签：body, frame, frameset, iframe, img, link, script）已完成加载时，将触发load事件，如果在window上绑定，则监听包括当前window下所有资源加载完成。
