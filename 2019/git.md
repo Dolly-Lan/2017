@@ -30,3 +30,9 @@ git 提交大小写不敏感
 .git > config配置
 
   ignorecase = false // 默认为true，表示大小写不敏感
+
+### 本地关联远程仓库
+
+    git remote add [<options>] <name> <url>
+
+    
