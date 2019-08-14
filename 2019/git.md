@@ -35,4 +35,8 @@ git 提交大小写不敏感
 
     git remote add [<options>] <name> <url>
 
+
+### TortoiseGit 配置ssh
+
+[资料](https://www.cnblogs.com/chucklu/p/4056499.html)
     
