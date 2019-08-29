@@ -37,3 +37,12 @@
 [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
 
 当一个资源及其依赖资源（支持该事件的标签：body, frame, frameset, iframe, img, link, script）已完成加载时，将触发load事件，如果在window上绑定，则监听包括当前window下所有资源加载完成。
+
+### new执行过程
+
+new Person()的伪代码
+
+    var obj = {}
+    var result = Person.call(obj)
+    typeof result === "Object" ? result : obj
+    
