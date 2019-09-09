@@ -46,3 +46,8 @@ new Person()的伪代码
     var result = Person.call(obj)
     typeof result === "Object" ? result : obj
     
+    
+###  防抖
+
+[资料](https://segmentfault.com/a/1190000016261602)
+    
