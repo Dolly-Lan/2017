@@ -32,6 +32,10 @@
 参数： open(url, windowName, options)
 返回值： open成功后新窗口的window对象，如果调用失败，返回值会是 null 。**如果父子窗口满足“同源策略”，你可以通过这个引用访问新窗口的属性或方法**。
 
+### window.open()和location.href
+
+window.open(url, "_self") 等同于 location.href
+
 ### onload
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
