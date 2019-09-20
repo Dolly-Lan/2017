@@ -21,3 +21,7 @@ BEM规范就是以如下方式来指定样式名称：
 
       word-break: normal;
       word-wrap:break-word;
+
+### :not(selector)
+
+      button:not([disabled]) { background: red; }  //表示属性为disabled的button标签背景色为红色
