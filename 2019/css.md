@@ -25,3 +25,7 @@ BEM规范就是以如下方式来指定样式名称：
 ### :not(selector)
 
       button:not([disabled]) { background: red; }  //表示属性为disabled的button标签背景色为红色
+
+### transform以中心缩放平移
+
+https://segmentfault.com/a/1190000009248258
