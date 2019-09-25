@@ -67,3 +67,7 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
     "gitHooks": {
         "pre-commit": "lint-staged"
     },
+    
+### vue中img标签指定图片路径
+
+https://www.cnblogs.com/lemoncool/p/11284586.html
