@@ -54,4 +54,10 @@ new Person()的伪代码
 ###  防抖
 
 [资料](https://segmentfault.com/a/1190000016261602)
+
+### Javascript toString()、toLocaleString()、valueOf()三个方法的区别
+
+[资料](https://www.cnblogs.com/niulina/p/5699031.html)
+
+
     
