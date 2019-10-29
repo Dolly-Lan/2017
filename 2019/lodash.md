@@ -12,3 +12,8 @@
   ];
   _.sortBy(users， ['age'])  // 默认升序
   _.sortBy(users, [function(item){ return -item.count }]) // 降序
+
+### _.difference(array, [values])
+
+    array (Array): 要检查的数组。
+    [values] (...Array): 排除的值。
