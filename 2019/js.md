@@ -60,4 +60,8 @@ new Person()的伪代码
 [资料](https://www.cnblogs.com/niulina/p/5699031.html)
 
 
+### reduce(callback, initValue)
+
+[资料](https://www.jianshu.com/p/e375ba1cfc47)
+
     
