@@ -39,4 +39,12 @@ git 提交大小写不敏感
 ### TortoiseGit 配置ssh
 
 [资料](https://www.cnblogs.com/chucklu/p/4056499.html)
+
+### 新建本地分支
+
+    git checkout -b branchName
+    
+### 推送本地分支到远程
+
+    git push origin branchName
     
