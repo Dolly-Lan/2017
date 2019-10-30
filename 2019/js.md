@@ -64,4 +64,14 @@ new Person()的伪代码
 
 [资料](https://www.jianshu.com/p/e375ba1cfc47)
 
+### EventTarget.dispatchEvent
+
+[资料](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/dispatchEvent)
+
+如在实现前端下载图片时：
+
+[实现代码](https://segmentfault.com/a/1190000010694215)
+
+    a.dispatchEvent(new MouseEvent('click', {}))  // 触发a标签的自动点击事件： 此写法兼容火狐，使用a.click()
+
     
