@@ -64,7 +64,13 @@ new Person()的伪代码
 
 [资料](https://www.jianshu.com/p/e375ba1cfc47)
 
-### EventTarget.dispatchEvent
+### EventTarget.dispatchEvent(event, target)
+
+参数
+
+    event 是要被派发的事件对象。
+    target 被用来初始化 事件 和 决定将会触发 目标.
+
 
 [资料](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/dispatchEvent)
 
@@ -74,4 +80,10 @@ new Person()的伪代码
 
     a.dispatchEvent(new MouseEvent('click', {}))  // 触发a标签的自动点击事件： 此写法兼容火狐，使用a.click()
 
+### MouseEvent(typeArg, mouseEventInit)
+
+typeArg
+    DOMString 格式的事件名称
+
+[资料](https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent)
     
