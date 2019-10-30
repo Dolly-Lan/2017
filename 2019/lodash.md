@@ -13,7 +13,7 @@
   _.sortBy(users， ['age'])  // 默认升序
   _.sortBy(users, [function(item){ return -item.count }]) // 降序
 
-### _.difference(array, [values])
+### _.difference(array, [values])  提出源数据中的目标数据，且返回新数组
 
     array (Array): 要检查的数组。
     [values] (...Array): 排除的值。
