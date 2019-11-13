@@ -17,3 +17,7 @@
 
     array (Array): 要检查的数组。
     [values] (...Array): 排除的值。
+
+### _.endsWith(string, [value])  判断字符串是否已某字符串结尾，且返回true/false
+
+    _.endsWith('abc', 'c');
