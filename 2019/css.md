@@ -22,6 +22,29 @@ BEM规范就是以如下方式来指定样式名称：
       word-break: normal;
       word-wrap:break-word;
 
+### 表格内强制断行
+
+step1:
+
+      table{
+        width: 100%; // 给出宽度
+        table-layout: fixed;
+      }
+      
+step2: colgroup指定列宽
+
+      <colgroup>
+            <col width="14%"></col>
+            <col width="2%"></col>
+            <col width="84%"></col>
+      </colgroup>
+      
+step3:
+
+      tr{
+          word-wrap:break-word;
+      }
+
 ### :not(selector)
 
       button:not([disabled]) { background: red; }  //表示属性为disabled的button标签背景色为红色
