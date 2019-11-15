@@ -87,3 +87,16 @@ typeArg
 
 [资料](https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent)
     
+### 预防xss攻击
+
+1. html 转义： 对尖括号转义
+
+        function escapeHtml(html) {
+          return html.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        }
+
+2. 工具
+
+    https://github.com/leizongmin/js-xss
+    
+
