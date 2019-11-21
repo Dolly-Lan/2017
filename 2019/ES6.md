@@ -145,3 +145,18 @@ async:
 ### String.includes(string)
 
 判断字符串中是否包含目标字符串，返回true/false
+
+### reduce会影响initValu(Obj类型)
+
+    const b = [1, 2, 3]
+    undefined
+    b.reduce((cur, prev) => {cur[prev] = 1; return cur}, a);
+    {1: 1, 2: 1, 3: 1}
+    a
+    {1: 1, 2: 1, 3: 1}
+    const c = 0;
+    undefined
+    b.reduce((cur, prev) => {return cur += prev}, c);
+    6
+    c
+    0
