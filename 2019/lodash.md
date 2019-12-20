@@ -21,3 +21,9 @@
 ### _.endsWith(string, [value])  判断字符串是否已某字符串结尾，且返回true/false
 
     _.endsWith('abc', 'c');
+
+### _.equalWidth(value, other) 判断value和other是否相等
+
+[文档](https://www.lodashjs.com/docs/latest#_isequalvalue-other)
+
+
