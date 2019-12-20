@@ -56,7 +56,7 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
     
 #### step3:
 
-一路回车
+通过空格、回车选择自动添加相关配置，如： babel、eslint、router、store等
 
 #### step4:
 
@@ -66,7 +66,75 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
 
     "gitHooks": {
         "pre-commit": "lint-staged"
-    },
+    }
+    
+#### vue.config.js
+
+    const PROXY_TARGET = "http://xxx"; // 为后台接口联调环境
+    const BASE_URL = process.env.NODE_ENV !== "production" ? "/" : "/init"; // 项目生产环境根目录为/init
+    const BASE_API_PATH = "/xxx"; // 项目api根目录
+
+    module.exports = {
+      // 配置环境变量BASE_API_PATH，修改环境变量BASE_URL（BASE_URL默认为"/"）
+      chainWebpack(config) {
+        config.plugin("define").tap(args => {
+          Object.assign(args[0]["process.env"], {
+            BASE_API_PATH: JSON.stringify(BASE_API_PATH),
+            BASE_URL: JSON.stringify(BASE_URL)
+          });
+          return args;
+        });
+      }, 
+      publicPath: BASE_URL,  //  官方文档：https://cli.vuejs.org/zh/config/#publicpath  默认值为"/"
+      devServer: {
+        proxy: {
+          [BASE_API_PATH]: {
+            target: PROXY_TARGET,
+            changeOrigin: true,
+            ws: false
+          }
+        }
+      },
+      // 第三方插件配置
+      pluginOptions: {}
+    };
+    
+#### router
+
+    import Vue from "vue";
+    import VueRouter from "vue-router";
+    import axios from "axios";
+    import Store from "@/store/index";
+    import Index from "@/views/xx/index.vue"; // 默认模块需一开始就加载
+
+    Vue.use(VueRouter);
+
+    const routes = [
+      {
+        path: "/",
+        redirect: "index"
+      },
+      {
+        path: "/index",
+        name: "index",
+        component: Index
+      },
+      {
+        path: "/routeB",
+        name: "routeB",
+        component: () => import("@/views/xxx/Index.vue") // 其他模块按需加载
+      }
+    ];
+
+    const router = new VueRouter({
+      mode: "history",
+      base: process.env.BASE_URL,
+      routes
+    });
+
+    export default router;
+
+    
     
 ### vue中img标签指定图片路径
 
