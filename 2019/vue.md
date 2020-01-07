@@ -177,3 +177,15 @@ https://www.cnblogs.com/lemoncool/p/11284586.html
             <option :value="1">1</option>
             <option :value="2">2</option>
           </select>
+
+#### 自定义组件使用v-model
+
+调用CustomInput组件
+
+    <custom-input v-model="data" />{{value}}  // 等价于 <custom-input :value="data" @input="(value) => { data = value }" />{{data}}
+    
+定义CustomInput.vue
+
+    <input :value="value" v-on:change="$emit("input, $event.target.value")" />
+    
+    
