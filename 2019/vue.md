@@ -186,13 +186,12 @@ https://www.cnblogs.com/lemoncool/p/11284586.html
     
 定义CustomInput.vue
 
-    <input :value="value" v-on:$listeners />
+    <input :value="value" v-on:listeners />
     // script
     export defaults {
      props: ['label', 'value'],
       computed: {
         inputListeners: function () {
-        console.log(666, this.$listeners);
           var vm = this
           // `Object.assign` 将所有的对象合并为一个新对象
           return Object.assign({},
