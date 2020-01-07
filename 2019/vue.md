@@ -139,3 +139,41 @@ https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js#L23
 ### vue中img标签指定图片路径
 
 https://www.cnblogs.com/lemoncool/p/11284586.html
+
+### v-model指令
+
+#### 表单的v-model
+
+语法糖：
+
+* text 和 textarea 元素使用 value 属性和 input 事件；
+
+        <input v-model="value" />
+        // 是以下写法的语法糖
+        <input :value="value" v-on:input="value = $event.target.value" />
+        
+         <textarea v-model="value" />
+        // 是以下写法的语法糖
+        <textarea :value="value" v-on:input="value = $event.target.value" />
+    
+* checkbox 和 radio 使用 checked 属性和 change 事件；
+
+        <input type="radio" name="test" :value="0" v-model="value" />
+        <input type="radio" name="test" :value="1" v-model="value" />
+        // 等价于
+        <input type="radio" name="test" :value="0" :checked="value === 0"  v-on:change="this.value = $event.target.value;"  />
+        <input type="radio" name="test" :value="1" :checked="value === 1" v-on:change="this.value = $event.target.value;"  />
+
+ * select 字段将 value 作为 prop 并将 change 作为事件
+ 
+         <select v-model="value">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+          // 等价于
+          <select :value="value" v-on:change="value = $event.target.value;">
+            <option :value="0">0</option>
+            <option :value="1">1</option>
+            <option :value="2">2</option>
+          </select>
