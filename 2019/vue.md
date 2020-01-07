@@ -142,7 +142,7 @@ https://www.cnblogs.com/lemoncool/p/11284586.html
 
 ### v-model指令
 
-#### 表单的v-model
+#### 原生表单的v-model
 
 语法糖：
 
