@@ -186,7 +186,7 @@ https://www.cnblogs.com/lemoncool/p/11284586.html
     
 定义CustomInput.vue
 
-    <input :value="value" v-on:listeners />
+    <input :v-bind="$props" v-on="inputListeners" />
     // script
     export defaults {
      props: ['label', 'value'],
@@ -210,5 +210,8 @@ https://www.cnblogs.com/lemoncool/p/11284586.html
       }
     }
     
+    ### $props 和 $attrs区别
     
+    * [$props文档](https://cn.vuejs.org/v2/api/#vm-attrs)
+    * [$attrs文档]（https://cn.vuejs.org/v2/api/#vm-props）
     
