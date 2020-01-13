@@ -180,13 +180,15 @@ https://www.cnblogs.com/lemoncool/p/11284586.html
 
 #### 自定义组件使用v-model
 
+[文档](https://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model)
+
 调用CustomInput组件
 
     <custom-input v-model="data" />{{value}}  // 等价于 <custom-input :value="data" @input="(value) => { data = value }" />{{data}}
     
 定义CustomInput.vue
 
-    <input :v-bind="$props" v-on="inputListeners" />
+    <input v-bind="$props" v-on="inputListeners" />
     // script
     export defaults {
      props: ['label', 'value'],
@@ -210,8 +212,16 @@ https://www.cnblogs.com/lemoncool/p/11284586.html
       }
     }
     
-    ### $props 和 $attrs区别
+如果想替换v-model监听默认的input事件，则在子组件中可使用model选项，指定prop和event
     
-    * [$props文档](https://cn.vuejs.org/v2/api/#vm-attrs)
-    * [$attrs文档]（https://cn.vuejs.org/v2/api/#vm-props）
+    model: {
+        prop: 'checked',
+        event: 'change'
+    },
+    
+    
+### $props 和 $attrs区别
+
+* [$props文档](https://cn.vuejs.org/v2/api/#vm-attrs)
+* [$attrs文档]（https://cn.vuejs.org/v2/api/#vm-props）
     
