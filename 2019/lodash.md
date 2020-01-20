@@ -27,3 +27,4 @@
 [文档](https://www.lodashjs.com/docs/latest#_isequalvalue-other)
 
 
+### _.mean(array) 求数组平均值
