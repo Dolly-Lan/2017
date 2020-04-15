@@ -26,3 +26,6 @@
   
     git push origin newBranch  // 远程无newBranch分支
     
+### 拉取关联远端分支
+
+    git pull [remote name] branchName // remote name 指关联的远端仓库名称
